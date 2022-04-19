@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link  href="style.css" rel="stylesheet">
+</head><title>Grace Portfolio</title>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+<body>
+  <img src="grace.jpg" alt="grace" width=400px; height="500px">
+  <p>
+    <div class="tab">
+      <button class="tablinks" onclick="openInfos(event,'About Me' )">About Me</button>
+      <button class="tablinks" onclick="openInfos(event,'My gallery')">My gallery</button>
+      <button class="tablinks" onclick="openInfos(event,'Contact')">Contact</button>
+      </div>
+      <div id="About Me" class="tabcontent">
+      <h3>About Me</h3>
+      <p1>Hi, there!<br/>
+        I am Giangkhamliu Pamei ,a software student in NavGurukul.<br/>
+        A 23 years old from Manipur,<br/>stayed in Bangalore for 3 months.<br/>
+        Being a software student, my skill is Problem solving.
+      <h3>Profile Summary</h3><br/>
+        -Bcom degree in graduation having strong passion for learning<br/>
+        -An opened minded person, passion for problem solving.<br/>
+        -Passion for Leadership Role.<br/>
+        -Able to work accurately.<br/>
+        -Love to explore new task and enjoy working with people. <br/>
+      <h3>Education</h3><br/>
+        1.Don  Bosco College Maram<br/>
+        <a href="https://dbcmaram.ac.in/"> click here</a><br/>
+        Bcom <br/>74.67%<br/>
+        2.Comet School Imphal<br/>
+        <a href="https://cometschool.in/">click here</a><br/>
+        HSE<br/>74.2%<br/>
+        3.Carmel Higher Secondary School<br/>
+        <a href="http://www.carmelhss.com/"> click here</a><br/>
+        HSLC<br/>85.6%<br/>
+      </p1>
+      </div>
+      <div id="My gallery" class="tabcontent">
+      <h3>My Gallery</h3>
+      <p>These are my pics.</p> 
+      <img src="giang.jpg" alt="giang"><style white-space=50px></style>
+      <img src="g2.jpg" alt="g2">
+      <img src="g.jpg" alt="g">
+      <img src="g3.jpg" alt="g3">
+      <img src="g4.jpg" alt="g4">
+      <img src="g7.jpg" alt="g7">
+      <img src="g6.jpg" alt="g6">
+      <img src="g5.jpg" alt="g5">
+      </div>
+          
+      <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+      <p><b>Nationality:</b> Indian<br/>
+      <b>Mobile no.</b>:9863093307<br/>
+      <b>email:</b><a href="https://mail.google.com/mail/u/0/">grace21@navgurukul.org</a><br/>
+      <b>facebook:</b><a href="https://www.facebook.com/profile.php?id=100068795085929">giang pamy</a><br/> 
+      <b>IG:</b>grace_pameih</p>
+      <b>GitHub:</b><a href="https://github.com/Giangkhamliu">giangkhamliu</a><br/>
+      <b>Linkedin:</b><a href="https://www.linkedin.com/in/giangkhamliu-grace-pamei-1112711bb">Giangkhamliu</a><br/>
+      </div>
+   </p>
+     <script>
+      function openInfos(evt, Infos) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(Infos).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+     </script>
+</body> 
+</html>
+
+
+
